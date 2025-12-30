@@ -1,14 +1,93 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Publications | Nikhil Kumar</title>
-  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/style.css" />
 </head>
+
 <body>
-  <h1>Publications</h1>
-  <p>List your papers here.</p>
-  <p><a href="index.html">Back to Home</a></p>
+  <div class="container">
+    <header class="site-header">
+      <h1 class="site-title">Nikhil Kumar</h1>
+      <p class="site-subtitle">Contact mechanics, rail vehicle dynamics, tribology</p>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a class="active" href="publications.html">Publications</a>
+        <a href="education.html">Education</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <hr class="hr" />
+
+    <main>
+      <section class="section">
+        <h2>Publications</h2>
+
+        <h3>Journal Articles</h3>
+
+        <div class="card pub">
+          <div class="pub-year">2025</div>
+          <div>
+            <b>Paper title (journal)</b>
+            <div class="small">
+              Nikhil Kumar, Coauthor A, Coauthor B.<br />
+              Journal Name, Volume(Issue), Pages, Year.
+              <span class="meta"> DOI: xxx (optional)</span>
+            </div>
+            <div class="small" style="margin-top:8px;">
+              <a href="#">PDF</a> · <a href="#">DOI</a> · <a href="#">Code</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card pub">
+          <div class="pub-year">2024</div>
+          <div>
+            <b>Paper title (journal)</b>
+            <div class="small">
+              Nikhil Kumar, Coauthor A.<br />
+              Journal Name, Year.
+            </div>
+          </div>
+        </div>
+
+        <h3>Conference Papers</h3>
+
+        <div class="card pub">
+          <div class="pub-year">2024</div>
+          <div>
+            <b>Paper title (conference)</b>
+            <div class="small">
+              Nikhil Kumar, Coauthor A, Coauthor B.<br />
+              Conference Name, Location, Year.
+            </div>
+          </div>
+        </div>
+
+        <h3>Theses and Reports</h3>
+
+        <div class="card">
+          <b>Thesis or technical report title</b>
+          <div class="small">Short description and link.</div>
+          <div class="small" style="margin-top:8px;">
+            <a href="#">PDF</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      © <span id="y"></span> Nikhil Kumar
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
