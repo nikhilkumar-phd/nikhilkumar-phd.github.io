@@ -1,6 +1,17 @@
 html {
   overflow-y: scroll;
 }
+.page-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+
+  background:
+    radial-gradient(1200px 500px at 20% -10%, rgba(83,183,255,0.18), transparent 60%),
+    radial-gradient(900px 450px at 85% 10%, rgba(139,92,246,0.16), transparent 55%),
+    var(--bg);
+}
 :root{
   --bg: #0b0f14;
   --panel: rgba(255,255,255,0.05);
@@ -19,14 +30,13 @@ html {
 
 *{ box-sizing:border-box; }
 html, body{ height:100%; }
-body{
-  margin:0;
+body {
+  margin: 0;
   font-family: var(--font);
-  background: radial-gradient(1200px 500px at 20% -10%, rgba(83,183,255,0.18), transparent 60%),
-              radial-gradient(900px 450px at 85% 10%, rgba(139,92,246,0.16), transparent 55%),
-              var(--bg);
+  background: var(--bg);
   color: var(--text);
 }
+
 
 a{ color: var(--accent); text-decoration: none; }
 a:hover{ text-decoration: underline; }
