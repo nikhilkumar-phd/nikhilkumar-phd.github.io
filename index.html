@@ -1,94 +1,62 @@
 <!doctype html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Nikhil Kumar</title>
-
-  <link rel="stylesheet" href="assets/style.css">
-
-  <!-- About section layout (kept local for clarity) -->
-  <style>
-    .about-layout {
-      display: flex;
-      align-items: flex-start;
-      gap: 24px;
-    }
-
-    .about-photo {
-      width: 220px;
-      border-radius: 10px;
-      flex-shrink: 0;
-      display: block;
-    }
-
-    .about-text {
-      flex: 1;
-    }
-
-    @media (max-width: 700px) {
-      .about-layout {
-        flex-direction: column;
-      }
-
-      .about-photo {
-        width: 180px;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="assets/style.css" />
 </head>
 
 <body>
   <div class="container">
-    <header>
+    <header class="site-header">
       <h1 class="site-title">Nikhil Kumar</h1>
-      <p class="tagline">Research, engineering, and technical development</p>
+      <p class="site-subtitle">Contact mechanics, rail vehicle dynamics, tribology</p>
 
-      <nav>
+      <nav class="nav" aria-label="Primary">
         <a class="active" href="index.html">Home</a>
         <a href="projects.html">Projects</a>
         <a href="publications.html">Publications</a>
+        <a href="education.html">Education</a>
         <a href="contact.html">Contact</a>
       </nav>
     </header>
+
+    <hr class="hr" />
 
     <main>
       <section class="section">
         <h2>About</h2>
 
-        <div class="about-layout">
-          <!-- Replace with a real headshot when available -->
-          <img src="img/profile/headshot.jpg" alt="Nikhil Kumar" class="about-photo">
+        <div class="card">
+          <div class="about-layout">
+            <img class="about-photo" src="img/profile.jpg" alt="Profile photo of Nikhil Kumar" />
 
-          <div class="about-text">
-            <p>
-              Welcome to my personal website.
-            </p>
+            <div>
+              <p class="small">
+                Brief 3 to 5 sentence overview goes here. This website highlights research and engineering work in
+                contact mechanics, rail vehicle dynamics, and tribology, including modeling, simulation, and
+                experimental insights.
+              </p>
 
-            <p>
-              This site is intended to present my research interests, technical projects,
-              and academic or professional work. It will be updated over time as projects
-              progress and new results become available.
-            </p>
+              <p class="small">
+                Add 1 more short paragraph with current affiliation or role, plus a one-line research focus.
+                Replace this placeholder with your actual text.
+              </p>
 
-            <p>
-              My interests broadly include engineering analysis, modeling and simulation,
-              algorithm development, and applied research in complex technical systems.
-              This website serves as a centralized place to document ongoing and completed work.
-            </p>
+              <div class="badges" aria-label="Focus areas">
+                <span class="badge">Wheel-rail contact</span>
+                <span class="badge">Vehicle dynamics</span>
+                <span class="badge">Tribology</span>
+                <span class="badge">FEA and simulation</span>
+                <span class="badge">Experimental validation</span>
+              </div>
 
-            <p>
-              Additional details about specific projects, publications, and background
-              can be found in the respective sections of this site.
-            </p>
-
-            <p>
-              <a href="files/Nikhil_Kumar_CV.pdf" target="_blank" rel="noopener">
-                Download CV (PDF)
-              </a>
-            </p>
+              <p class="small" style="margin-top:12px;">
+                <a href="assets/CV.pdf">Download CV (PDF)</a>
+                <span class="meta"> (add your CV in assets/CV.pdf)</span>
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -96,36 +64,30 @@
       <section class="section">
         <h2>Highlights</h2>
 
-        <a href="projects.html#project-1" class="highlight-link">
-          <div class="card">
-            <b>Project Area One</b>
-            <div class="small">
-              Brief description of a primary research or engineering focus area.
-            </div>
-          </div>
-        </a>
+        <div class="card">
+          <b>Contact mechanics and wear modeling</b>
+          <div class="small">Analytical and numerical contact models, friction, wear, and damage metrics.</div>
+        </div>
 
-        <a href="projects.html#project-2" class="highlight-link">
-          <div class="card">
-            <b>Project Area Two</b>
-            <div class="small">
-              Brief description of another key project or technical contribution.
-            </div>
-          </div>
-        </a>
+        <div class="card">
+          <b>Rail vehicle dynamics and wheel-rail interaction</b>
+          <div class="small">Stability, curving performance, guidance, and track-vehicle coupled behavior.</div>
+        </div>
+
+        <div class="card">
+          <b>Tribology for rail and mechanical systems</b>
+          <div class="small">Surface interactions, lubrication regimes, and material response under rolling contact.</div>
+        </div>
       </section>
     </main>
 
-    <footer>
+    <footer class="footer">
       © <span id="y"></span> Nikhil Kumar
     </footer>
   </div>
 
-  <!-- Footer year -->
   <script>
     document.getElementById("y").textContent = new Date().getFullYear();
   </script>
-
-
 </body>
 </html>
