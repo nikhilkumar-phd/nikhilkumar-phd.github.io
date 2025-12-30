@@ -1,82 +1,114 @@
 :root {
+  /* Olive palette */
+  --bg-main: #6f7f3a;          /* olive green background */
+  --bg-container: #5f6e32;     /* darker olive for content */
+  --bg-card: #55622d;          /* slightly darker for cards */
+
+  --text-main: #f2f4e8;        /* off-white text */
+  --text-muted: #d6dbc3;
+  --link: #e8edd3;             /* soft contrast for links */
+  --link-hover: #ffffff;
+
+  --border: rgba(255,255,255,0.18);
   --maxw: 980px;
-  --text: #111;
-  --muted: #555;
-  --link: #0b57d0;
-  --border: #e5e5e5;
 }
 
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-  color: var(--text);
   line-height: 1.55;
-  background: #fff;
+  background: var(--bg-main);
+  color: var(--text-main);
 }
 
+/* Main content wrapper */
 .container {
   max-width: var(--maxw);
-  margin: 0 auto;
-  padding: 28px 18px;
+  margin: 40px auto;
+  padding: 32px 28px;
+  background: var(--bg-container);
+  border-radius: 14px;
 }
 
+/* Header */
 header {
   border-bottom: 1px solid var(--border);
-  padding: 18px 0;
+  padding-bottom: 18px;
 }
 
 .site-title {
   margin: 0;
   font-size: 34px;
   font-weight: 650;
-  letter-spacing: 0.2px;
+  letter-spacing: 0.3px;
 }
 
 .tagline {
-  margin: 6px 0 0 0;
-  color: var(--muted);
+  margin-top: 6px;
+  color: var(--text-muted);
 }
 
+/* Navigation */
 nav {
-  margin-top: 14px;
+  margin-top: 16px;
   display: flex;
-  gap: 18px;
+  gap: 14px;
   flex-wrap: wrap;
 }
 
 nav a {
   text-decoration: none;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.12);
   color: var(--link);
   font-weight: 600;
+  transition: background 0.2s ease, color 0.2s ease;
 }
 
-nav a:hover { text-decoration: underline; }
+nav a:hover {
+  background: rgba(255,255,255,0.25);
+  color: var(--link-hover);
+}
 
-main { padding: 22px 0; }
+/* Main content */
+main {
+  padding: 26px 0;
+}
 
 h2 {
   margin: 0 0 12px 0;
   font-size: 22px;
+  color: var(--link-hover);
 }
 
 .section {
-  margin-top: 22px;
+  margin-top: 26px;
 }
 
+/* Cards */
 .card {
+  background: var(--bg-card);
   border: 1px solid var(--border);
-  border-radius: 10px;
-  padding: 14px 14px;
-  margin: 12px 0;
+  border-radius: 12px;
+  padding: 16px 18px;
+  margin: 14px 0;
 }
 
-.small { color: var(--muted); font-size: 14px; }
+/* Small muted text */
+.small {
+  color: var(--text-muted);
+  font-size: 14px;
+}
 
+/* Footer */
 footer {
   border-top: 1px solid var(--border);
-  padding: 18px 0;
-  color: var(--muted);
+  padding-top: 18px;
+  color: var(--text-muted);
   font-size: 14px;
 }
