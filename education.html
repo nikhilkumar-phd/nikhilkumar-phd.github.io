@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Education | Nikhil Kumar</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <header class="site-header">
+      <h1 class="site-title">Nikhil Kumar</h1>
+      <p class="site-subtitle">Contact mechanics, rail vehicle dynamics, tribology</p>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="publications.html">Publications</a>
+        <a class="active" href="education.html">Education</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <hr class="hr" />
+
+    <main>
+      <section class="section">
+        <h2>Education</h2>
+
+        <div class="card">
+          <b>PhD, Department, University</b>
+          <div class="small">Year range · Thesis topic (one line).</div>
+          <div class="meta" style="margin-top:8px;">Advisor: Name · Keywords: wheel-rail, contact, dynamics</div>
+        </div>
+
+        <div class="card">
+          <b>MS, Department, University</b>
+          <div class="small">Year range · Research focus (one line).</div>
+        </div>
+
+        <div class="card">
+          <b>BS, Department, University</b>
+          <div class="small">Year range · Focus area (one line).</div>
+        </div>
+
+        <h3>Skills</h3>
+        <div class="card">
+          <ul class="list">
+            <li>Contact mechanics: Hertz, non-Hertz, rough surface contact (edit as applicable).</li>
+            <li>Rail dynamics: vehicle-track interaction, curving, stability, wear metrics.</li>
+            <li>Tribology: friction models, lubrication regimes, wear modeling, material response.</li>
+            <li>Software: list tools (MATLAB, Python, FEA packages, MBD tools, data acquisition).</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      © <span id="y"></span> Nikhil Kumar
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
