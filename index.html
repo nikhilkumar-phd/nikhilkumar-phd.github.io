@@ -1,25 +1,131 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>Nikhil Kumar</title>
+
   <link rel="stylesheet" href="assets/style.css">
+
+  <!-- About section layout (kept local for clarity) -->
+  <style>
+    .about-layout {
+      display: flex;
+      align-items: flex-start;
+      gap: 24px;
+    }
+
+    .about-photo {
+      width: 220px;
+      border-radius: 10px;
+      flex-shrink: 0;
+      display: block;
+    }
+
+    .about-text {
+      flex: 1;
+    }
+
+    @media (max-width: 700px) {
+      .about-layout {
+        flex-direction: column;
+      }
+
+      .about-photo {
+        width: 180px;
+      }
+    }
+  </style>
 </head>
+
 <body>
-  <div class="wrap">
-    <h1>Nikhil Kumar</h1>
-    <p>Personal website hosted on GitHub Pages.</p>
+  <div class="container">
+    <header>
+      <h1 class="site-title">Nikhil Kumar</h1>
+      <p class="tagline">Research, engineering, and technical development</p>
 
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="projects.html">Projects</a>
-      <a href="publications.html">Publications</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+      <nav>
+        <a class="active" href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="publications.html">Publications</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
 
-    <h2>About</h2>
-    <p>Replace this text with a short intro: research focus, roles, and what the site contains.</p>
+    <main>
+      <section class="section">
+        <h2>About</h2>
+
+        <div class="about-layout">
+          <!-- Replace with a real headshot when available -->
+          <img src="img/profile/headshot.jpg" alt="Nikhil Kumar" class="about-photo">
+
+          <div class="about-text">
+            <p>
+              Welcome to my personal website.
+            </p>
+
+            <p>
+              This site is intended to present my research interests, technical projects,
+              and academic or professional work. It will be updated over time as projects
+              progress and new results become available.
+            </p>
+
+            <p>
+              My interests broadly include engineering analysis, modeling and simulation,
+              algorithm development, and applied research in complex technical systems.
+              This website serves as a centralized place to document ongoing and completed work.
+            </p>
+
+            <p>
+              Additional details about specific projects, publications, and background
+              can be found in the respective sections of this site.
+            </p>
+
+            <p>
+              <a href="files/Nikhil_Kumar_CV.pdf" target="_blank" rel="noopener">
+                Download CV (PDF)
+              </a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Highlights</h2>
+
+        <a href="projects.html#project-1" class="highlight-link">
+          <div class="card">
+            <b>Project Area One</b>
+            <div class="small">
+              Brief description of a primary research or engineering focus area.
+            </div>
+          </div>
+        </a>
+
+        <a href="projects.html#project-2" class="highlight-link">
+          <div class="card">
+            <b>Project Area Two</b>
+            <div class="small">
+              Brief description of another key project or technical contribution.
+            </div>
+          </div>
+        </a>
+      </section>
+    </main>
+
+    <footer>
+      © <span id="y"></span> Nikhil Kumar
+    </footer>
   </div>
+
+  <!-- Footer year -->
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+
+
 </body>
 </html>
