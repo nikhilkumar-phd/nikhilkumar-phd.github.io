@@ -1,14 +1,75 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Projects | Nikhil Kumar</title>
-  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/style.css" />
 </head>
+
 <body>
-  <h1>Projects</h1>
-  <p>Add your projects here (title, 2–3 bullets, images/links).</p>
-  <p><a href="index.html">Back to Home</a></p>
+  <div class="container">
+    <header class="site-header">
+      <h1 class="site-title">Nikhil Kumar</h1>
+      <p class="site-subtitle">Contact mechanics, rail vehicle dynamics, tribology</p>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a class="active" href="projects.html">Projects</a>
+        <a href="publications.html">Publications</a>
+        <a href="education.html">Education</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <hr class="hr" />
+
+    <main>
+      <section class="section">
+        <h2>Projects</h2>
+
+        <div class="card" id="project-1">
+          <b>Project title 1</b>
+          <div class="small">One-line problem statement and why it matters.</div>
+          <ul class="list">
+            <li>Key contribution or method (modeling, experiments, simulation, data).</li>
+            <li>Key result (quantitative if possible).</li>
+            <li>Tools: example (MATLAB, Python, ABAQUS, SIMPACK, Vampire, UM, etc.).</li>
+          </ul>
+          <p class="small" style="margin-top:10px;">
+            <a href="#">Link to report or code</a>
+            <span class="meta"> (optional)</span>
+          </p>
+        </div>
+
+        <div class="card" id="project-2">
+          <b>Project title 2</b>
+          <div class="small">Short description of the technical focus and outcome.</div>
+          <ul class="list">
+            <li>Contact model or friction law detail.</li>
+            <li>Validation approach.</li>
+            <li>Impact on rail performance, wear, noise, or safety.</li>
+          </ul>
+        </div>
+
+        <div class="card" id="project-3">
+          <b>Project title 3</b>
+          <div class="small">Short description with a concrete deliverable.</div>
+          <ul class="list">
+            <li>Methods: FEA, multi-body dynamics, system identification, measurements.</li>
+            <li>Outputs: plots, datasets, model library, guidelines, paper.</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      © <span id="y"></span> Nikhil Kumar
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
