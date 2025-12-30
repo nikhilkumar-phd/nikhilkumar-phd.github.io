@@ -2,18 +2,22 @@ html {
   overflow-y: scroll;
 }
 :root {
-  --bg: #0b0b0c;
-  --panel: #0f0f11;
-  --text: #f2f2f2;
-  --muted: #b8b8b8;
-  --link: #66a3ff;
-  --border: #232327;
+  /* Olive / academic research palette */
+  --bg: #5f6e32;              /* page background */
+  --panel: #55622d;           /* container background */
+  --text: #f2f4e8;            /* primary text */
+  --muted: #d2d8b8;           /* secondary text */
+  --link: #e6ebc8;            /* links */
+  --border: rgba(255,255,255,0.18);
+
+  /* Accent color for section breaks, numbering, highlights */
+  --accent: #cddc8f;          /* muted olive-yellow accent */
 
   --maxw: 1200px;
   --pad: 22px;
-
   --radius: 14px;
 }
+
 
 * { box-sizing: border-box; }
 
@@ -67,11 +71,11 @@ nav a:hover {
 }
 
 nav a.active {
-  color: var(--text);
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid var(--border);
-  text-decoration: none;
+  color: #ffffff;
+  background: rgba(205, 220, 143, 0.25);
+  border: 1px solid rgba(205, 220, 143, 0.45);
 }
+
 
 main { padding: 22px 0; }
 
@@ -132,7 +136,7 @@ footer {
 .section-break{
   margin: 40px 0 22px;
   padding-top: 20px;
-  border-top: 3px solid #3b82f6; /* accent blue */
+border-top: 3px solid var(--accent);
 }
 
 .section-break h2{
@@ -141,7 +145,7 @@ footer {
 
 .section-break-sub{
   margin-top: 6px;
-  color: #cbd5f5;
+color: var(--muted);
 }
 
 
@@ -284,9 +288,9 @@ footer {
 
 /* Add the “highlight the target project” behavior on projects.html*/
 .project-card:target {
-  outline: 2px solid rgba(100, 160, 255, 0.8);
+outline: 2px solid rgba(205, 220, 143, 0.85);
   outline-offset: 6px;
-  background-color: rgba(100, 160, 255, 0.08);
+  background-color: rgba(205, 220, 143, 0.12);
 }
 
 
@@ -329,4 +333,3 @@ footer {
   }
 
 }
-
