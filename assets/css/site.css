@@ -796,8 +796,8 @@ a { color: inherit; }
 .entry__figs video {
   width: 100%;
   aspect-ratio: 4 / 3;
-  object-fit: cover;
-  background: var(--paper);
+  object-fit: contain;
+  background: #fff;
   display: block;
 }
 .entry__figs video { cursor: pointer; }
