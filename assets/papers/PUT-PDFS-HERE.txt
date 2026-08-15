@@ -1,0 +1,50 @@
+Drop your paper PDFs in this folder using EXACTLY these filenames.
+The links in publications.html already point at them.
+
+Filenames are case-sensitive on GitHub Pages. Lowercase, exactly as written.
+
+
+OPEN ACCESS - the publisher PDF (Version of Record) is fine to host
+-------------------------------------------------------------------
+  kumar-2025-res-derailment-review.pdf    Railway Engineering Science
+                                          Fully open access, CC BY or CC BY-NC-ND
+
+  shaju-2025-sensors-wheel-crack.pdf      Sensors 25(19) 6126, MDPI, CC BY
+
+  mantovani-2025-designs-roller-rig.pdf   Designs 9(4) 99, MDPI, CC BY
+
+  kumar-2024-machines-leaves.pdf          Machines 12(5) 301, MDPI, CC BY
+
+
+YOUR OWN ZENODO DEPOSITS - fine to host
+----------------------------------------
+  mantovani-2025-arema-wheelset-rig.pdf   AREMA 2025, Indianapolis
+  kumar-2024-arema-contact-patch.pdf      AREMA 2024, Louisville
+  kumar-2020-bolted-joints.pdf            Jain University 2020
+
+
+ACCEPTED MANUSCRIPT ONLY - do NOT upload the typeset publisher PDF
+-------------------------------------------------------------------
+  kumar-2025-ijrt-traction-enhancement-AM.pdf
+
+  International Journal of Rail Transportation is a Taylor & Francis
+  subscription journal. T&F permit you to post the ACCEPTED MANUSCRIPT
+  (your own post-peer-review file, before their typesetting) on a personal
+  or departmental website with no embargo period. The Version of Record -
+  their branded, typeset PDF - is not yours to redistribute.
+
+  If you paid an APC and it published gold open access, ignore the above
+  and use the publisher PDF; rename the file to drop the -AM suffix and
+  update the link in publications.html.
+
+  T&F also require this acknowledgement, which is already on the page:
+
+    "This is an Accepted Manuscript of an article published by Taylor &
+     Francis in International Journal of Rail Transportation on
+     [publication date], available online:
+     https://doi.org/10.1080/23248378.2025.2484807"
+
+  Fill in the real publication date in publications.html.
+
+
+Delete this file once the PDFs are in place.

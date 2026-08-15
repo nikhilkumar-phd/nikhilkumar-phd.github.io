@@ -1,101 +1,343 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Nikhil Kumar</title>
-  <link rel="stylesheet" href="assets/style.css" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nikhil Kumar — Experimental mechanics and test systems</title>
+<meta name="description" content="Nikhil Kumar, PhD — experimental mechanics, test system design, instrumentation, contact mechanics and tribology. Virginia Tech.">
+<meta property="og:title" content="Nikhil Kumar">
+<meta property="og:description" content="Experimental mechanics, test systems, instrumentation. Virginia Tech.">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<meta name="theme-color" content="#13171c">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
 </head>
-
 <body>
-  <div class="page-bg"></div>
+<a class="skip" href="#main">Skip to content</a>
 
-  <div class="container">
-    <header class="site-header">
-      <h1 class="site-title">Nikhil Kumar</h1>
-      <p class="site-subtitle">Contact Mechanics, Rail Vehicle Dynamics, Tribology</p>
+<header class="masthead">
+  <div class="shell masthead__inner">
+    <a class="mark" href="index.html" aria-label="Nikhil Kumar — home">NK</a>
+    <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+    <nav class="nav" id="primary-nav" aria-label="Primary">
+      <a href="index.html" aria-current="page">About</a>
+      <a href="projects.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="education.html">CV</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
 
-      <nav class="nav" aria-label="Primary">
-        <a class="active" href="index.html">Home</a>
-        <a href="projects.html">Projects</a>
-        <a href="publications.html">Publications</a>
-        <a href="education.html">Education</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </header>
+<main id="main">
 
-    <hr class="hr" />
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="shell hero__grid">
 
-    <main>
-      <section class="section">
-        <h2>About</h2>
+      <div>
+        <ul class="chiprow">
+          <li><a class="chip" href="https://www.google.com/maps/place/Blacksburg,+VA/">
+            <span class="chip__dot" aria-hidden="true"></span>Blacksburg, Virginia</a></li>
+          <li><a class="chip" href="https://scholar.google.com/citations?user=mMcpcOAAAAAJ&amp;hl=en">Google Scholar</a></li>
+          <li><a class="chip" href="https://www.linkedin.com/in/nikhilk22/">LinkedIn</a></li>
+        </ul>
 
-        <div class="card">
-          <div class="about-layout">
-            <img class="about-photo" src="img/profile.jpg" alt="Profile photo of Nikhil Kumar" />
+        <h1 class="hero__name">Nikhil<br>Kumar</h1>
 
-            <div>
-              <p class="small">
-                I am a Postdoctoral Researcher in Mechanical Engineering Department at Virginia Tech, affiliated with the Center for Vehicle Systems and Safety and the Railways Technologies Laboratory. 
-                My research focuses on wheel rail contact behavior and its implications for rail vehicle safety and performance.
-              </p>
+        <p class="hero__role">
+          Experimental mechanics, test systems, and instrumentation.
+          <em>Postdoctoral Research Associate, Center for Vehicle Systems and Safety, Virginia Tech.</em>
+        </p>
 
-              <p class="small">
-                My doctoral work centers on contact mechanics and tribology, with an emphasis on experimental evaluation of third body layer effects,
-                surface finish, and frictional behavior at the wheel rail interface. This work combines laboratory experiments, numerical modeling,
-                and data analysis to assess their influence on wear, adhesion, and derailment risk.
-                Previously, I have worked on structural and contact analysis of aero engine bolted joints, CAD based design of unmanned aerial systems,
-                and prototype development of assistive mobility devices. These projects involved finite element analysis, mechanical design,
-                and experimental validation. My broader research interests include rail vehicle dynamics, wheel rail interaction,
-                tribology, and applied mechanics, with the goal of developing practical, mechanics-based insights that improve the safety and reliability of rail and transportation systems.  
-              </p>
+        <div class="prose">
+          <p>I design, build, and run the test systems that establish whether a loaded mechanical component will
+          survive service — servo-driven rigs, custom instrumentation, and the measurement protocols behind them.
+          The mechanics I work in is contact and tribology: wear, fatigue, and failure at the interfaces that carry
+          the highest loads. The output is experimental evidence solid enough for a federal sponsor, a design
+          decision, or a maintenance call to rest on.</p>
+        </div>
 
-              <div class="badges" aria-label="Focus areas">
-                <span class="badge">Wheel-rail contact</span>
-                <span class="badge">Vehicle dynamics</span>
-                <span class="badge">Tribology</span>
-                <span class="badge">FEA and simulation</span>
-                <span class="badge">Experimental validation</span>
-              </div>
+        <div class="btnrow hero__actions">
+          <a class="btn btn--fill" href="projects.html">See the research <span class="btn__arrow" aria-hidden="true">→</span></a>
+          <a class="btn" href="assets/files/CV.pdf">Download CV</a>
+        </div>
+      </div>
 
-              <p class="small" style="margin-top:12px;">
-                <a href="assets/CV.pdf">Download CV (PDF)</a>
-                <span class="meta"> (add your CV in assets/CV.pdf)</span>
-              </p>
-            </div>
+      <!-- signature element: Hertzian contact pressure -->
+      <figure class="patchfig">
+        <svg viewBox="0 0 520 380" role="img" aria-labelledby="fig-title fig-desc">
+          <title id="fig-title">Contact pressure distribution at a loaded interface</title>
+          <desc id="fig-desc">A curved body pressed against a flat surface under normal load, with the resulting
+            semi-elliptical contact pressure distribution drawn beneath the interface and the contact width
+            marked.</desc>
+
+          <defs>
+            <pattern id="grid" width="26" height="26" patternUnits="userSpaceOnUse">
+              <path class="sv-gridline" d="M26 0 H0 V26"/>
+            </pattern>
+            <linearGradient id="steelfade" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%"   stop-color="#67727e" stop-opacity="0.04"/>
+              <stop offset="100%" stop-color="#67727e" stop-opacity="0.20"/>
+            </linearGradient>
+            <linearGradient id="pfade" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%"   stop-color="#ce1b52" stop-opacity="0.55"/>
+              <stop offset="100%" stop-color="#ce1b52" stop-opacity="0.10"/>
+            </linearGradient>
+          </defs>
+
+          <rect width="520" height="380" fill="url(#grid)"/>
+
+          <!-- load -->
+          <g class="sv-lead">
+            <path d="M250 18 L250 44"/>
+            <path d="M244 36 L250 46 L256 36" fill="none"/>
+            <path class="sv-centre" d="M250 46 L250 344"/>
+          </g>
+          <g class="sv-label"><text x="260" y="34">NORMAL LOAD</text></g>
+
+          <!-- bodies -->
+          <circle class="sv-body" cx="250" cy="140" r="90" fill="url(#steelfade)"/>
+          <path class="sv-body" d="M40 230 L470 230 L470 344 L40 344 Z" fill="url(#steelfade)"/>
+
+          <!-- pressure distribution -->
+          <path class="sv-pressure" d="M188 230 A62 46 0 0 0 312 230 Z" fill="url(#pfade)"/>
+          <g class="sv-hatch">
+            <path d="M192 230 L192 246"/><path d="M200 230 L200 257"/>
+            <path d="M210 230 L210 265"/><path d="M220 230 L220 270"/>
+            <path d="M230 230 L230 274"/><path d="M240 230 L240 275"/>
+            <path d="M260 230 L260 275"/><path d="M270 230 L270 274"/>
+            <path d="M280 230 L280 270"/><path d="M290 230 L290 265"/>
+            <path d="M300 230 L300 257"/><path d="M308 230 L308 246"/>
+          </g>
+
+          <!-- contact width dimension -->
+          <g class="sv-lead">
+            <path d="M188 288 L188 316"/><path d="M312 288 L312 316"/>
+            <path d="M188 310 L312 310"/>
+          </g>
+          <g class="sv-label"><text x="320" y="314">CONTACT WIDTH</text></g>
+
+          <!-- p max -->
+          <g class="sv-lead"><path d="M250 276 L352 252"/></g>
+          <g class="sv-label sv-label--film"><text x="356" y="250">PEAK PRESSURE</text></g>
+
+          <g class="sv-label sv-label--film"><text x="24" y="30">LOADED INTERFACE</text></g>
+        </svg>
+        <figcaption>
+          <span>Contact pressure distribution</span>
+          <span>Measured, not assumed</span>
+        </figcaption>
+      </figure>
+
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section">
+    <div class="shell">
+
+      <div class="section__head">
+        <div>
+          <h2 class="section__title">About</h2>
+          <p class="section__note">The longer version</p>
+        </div>
+        <p class="lede">Trained in mechanical engineering, working at the point where contact mechanics, tribology,
+          and rail vehicle dynamics meet — and where the answers have to be measured, not assumed.</p>
+      </div>
+
+      <div class="about__grid">
+        <div class="about__body prose">
+
+          <h3>What I do</h3>
+          <p>Hi, I'm Nikhil. My work sits at the interface where a mechanical component carries its highest load,
+          and my job is to find out what actually happens there. Usually that means building something that can
+          measure it. Across transportation and machinery, the parts under the highest load are the ones that
+          wear, fatigue, and fail, and the cost of missing that failure is measured in lives rather than downtime.</p>
+
+          <h3>Building the systems that measure</h3>
+          <p>A lot of my week is hardware. In my postdoctoral role I led the expansion of a single-wheel contact
+          rig into a single-axle test platform — specifying servo motors and drives, integrating new motion axes
+          into an existing control architecture, building the safety circuits, and calibrating custom
+          instrumentation. Before that, my doctoral results depended on test protocols I designed from scratch,
+          repeatable enough that a federal sponsor could act on the numbers.</p>
+
+          <p>Design of experiments, instrumentation, data acquisition, and enough mechanics to know what the
+          signal means: that combination is the thread through everything below, and it transfers well beyond
+          the specific components I have tested.</p>
+
+          <h3>Before research</h3>
+          <p>I studied Mechanical Engineering at the Vellore Institute of Technology, graduating in 2022, and
+          spent my last two years there as an undergraduate research assistant doing finite element contact
+          modelling of stepped and back-to-back bolted joints in ANSYS APDL — parametric evaluation of stress
+          and strain at frictional interfaces. That work won Best Paper at a peer-reviewed conference and is
+          where the interest in contact started.</p>
+
+          <p>My senior project took me into manufacturing: a systematic process improvement in tooling on the
+          3C machining lines at Toyota Engines India, working inside the Toyota Production System. Seeing how a
+          part is actually made changed how I think about failure. A component's service life is set as much by
+          its material, its surface, and its process as by the load it eventually carries.</p>
+
+          <h3>Doctoral research</h3>
+          <p>I completed my PhD in Mechanical Engineering at Virginia Tech in 2025, in the Railway Technologies
+          Laboratory within the Center for Vehicle Systems and Safety, advised by Dr. Mehdi Ahmadian. The work
+          examined how surface condition and contact geometry change the forces at a loaded interface: how
+          contaminants and engineered friction modifiers alter available traction, and what the contact patch
+          actually looks like when the geometry stops being Hertzian.</p>
+
+          <p>Two results stand out. I produced one of the first experimental characterisations of non-Hertzian
+          conformal and two-point contact using a real wheel profile, measured directly rather than inferred.
+          And I developed a wear optimisation that minimised modelled wear rate using sequential quadratic
+          programming on a modified Archard law, validated against baseline testing. The programme was delivered
+          to the Federal Railroad Administration and produced five peer-reviewed journal articles.</p>
+
+          <h3>Where the work is going</h3>
+          <p>Three connected directions. First, the contact mechanics and tribology of load-bearing interfaces,
+          including the material, surface, and manufacturing choices that govern wear — the same mechanics that
+          governs a wheel on a rail governs bearings, gears, and brakes. Second, non-destructive detection of
+          defects before they cause failure, extending passive acoustic sensing to a broader class of components.
+          Third, predictive maintenance: combining sensor data with physics-based models to time intervention
+          before failure rather than after it.</p>
+
+          <p>Long term, I want to run an experimentally grounded lab built around those three questions, with
+          problems scoped so that undergraduate and master's researchers can own one from bench to result.</p>
+
+          <!-- EDIT ME: optional, but a personal note makes a page memorable -->
+          <h3>Outside the lab</h3>
+          <p>[Optional but recommended — two or three sentences about something you do that isn't research.
+          Keep it concrete: one real, specific detail lands better than three general ones, and this is
+          usually the paragraph people remember.]</p>
+
+        </div>
+
+        <figure class="portrait">
+          <img src="img/profile.jpg" alt="Portrait of Nikhil Kumar" width="480" height="600">
+          <figcaption>Nikhil Kumar — Blacksburg, VA</figcaption>
+        </figure>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ OUTCOMES ============ -->
+  <section class="section band">
+    <div class="shell">
+      <div class="section__head">
+        <div>
+          <h2 class="section__title">Track record</h2>
+          <p class="section__note">2022 — present</p>
+        </div>
+        <p class="lede" style="color:rgba(255,255,255,0.78)">Test infrastructure specified and commissioned,
+          experiments designed and run, and results delivered to a federal sponsor on schedule — most of it built
+          on measurements that did not exist before the hardware was there to take them.</p>
+      </div>
+
+      <ul class="outcomes">
+        <li>
+          <span class="tick">01</span>
+          <span><strong>Designed and built electromechanical test infrastructure</strong>, expanding roller rig
+          capability from single-wheel to single-axle testing. Specified servo motors and drives and integrated
+          three new motion axes into an existing control architecture, bridging hardware to control model.</span>
+        </li>
+        <li>
+          <span class="tick">02</span>
+          <span><strong>Developed and implemented lab safety protocols</strong> — STO, E-Stop, and RTO — to meet
+          operational safety standards on a high-energy test platform.</span>
+        </li>
+        <li>
+          <span class="tick">03</span>
+          <span><strong>Stress-tested and calibrated a custom PCB for wheel instrumentation</strong>, validating
+          signal integrity under operational loads before any measurement was trusted.</span>
+        </li>
+        <li>
+          <span class="tick">04</span>
+          <span><strong>Applied JMP-based design of experiments across multiple degrees of freedom</strong>,
+          producing statistically rigorous technical reports for federal stakeholders rather than one-off runs.</span>
+        </li>
+        <li>
+          <span class="tick">05</span>
+          <span><strong>First experimental characterisation of non-Hertzian conformal and two-point contact</strong>
+          using an AAR2A wheel profile — measured directly with pressure-sensitive films rather than inferred.</span>
+        </li>
+        <li>
+          <span class="tick">06</span>
+          <span><strong>Achieved a 95% reduction in modelled wear rate</strong> through constrained optimisation
+          on a modified Archard law solved by sequential quadratic programming, validated against baseline
+          testing on the rig.</span>
+        </li>
+        <li>
+          <span class="tick">07</span>
+          <span><strong>Quantified how contaminants change available traction</strong> at a loaded contact,
+          covering both traction-reducing and traction-enhancing agents. Findings delivered to the Federal
+          Railroad Administration.</span>
+        </li>
+        <li>
+          <span class="tick">08</span>
+          <span><strong>Six journal articles, three conference papers, and six invited talks and posters</strong>
+          since 2020, plus peer review for SAE, the <em>International Journal of Rail Transportation</em>, and
+          <em>Railway Engineering Science</em>.</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FOCUS AREAS + CTA ============ -->
+  <section class="section">
+    <div class="shell">
+      <div class="section__head">
+        <div>
+          <h2 class="section__title">Capabilities</h2>
+          <p class="section__note">Jump to the work</p>
+        </div>
+        <div>
+          <ul class="pills">
+            <li><a href="projects.html#test-platform">Test rig design and commissioning</a></li>
+            <li><a href="projects.html#test-platform">Servo drives and motion control</a></li>
+            <li><a href="projects.html#test-platform">Instrumentation and signal integrity</a></li>
+            <li><a href="projects.html#test-platform">Machine safety: STO, E-Stop, RTO</a></li>
+            <li><a href="projects.html#conformal-static">Design of experiments (JMP)</a></li>
+            <li><a href="projects.html#conformal-static">Test protocol development</a></li>
+            <li><a href="projects.html#conformal-dynamic">Non-Hertzian contact mechanics</a></li>
+            <li><a href="projects.html#traction-reducing">Friction, adhesion, and tribology</a></li>
+            <li><a href="projects.html#wear-optimisation">Wear modelling and optimisation</a></li>
+            <li><a href="projects.html#uae-diagnostics">Non-destructive evaluation</a></li>
+            <li><a href="projects.html#directions">Condition monitoring</a></li>
+            <li><a href="projects.html#conformal-dynamic">Model validation</a></li>
+            <li><a href="education.html">FEA: ANSYS, Abaqus, CONTACT</a></li>
+            <li><a href="education.html">MATLAB, Python, signal processing</a></li>
+          </ul>
+
+          <div class="btnrow" style="margin-top:2rem">
+            <a class="btn btn--fill" href="publications.html">Read the publications <span class="btn__arrow" aria-hidden="true">→</span></a>
+            <a class="btn" href="contact.html">Get in touch</a>
           </div>
         </div>
-      </section>
+      </div>
+    </div>
+  </section>
 
-      <section class="section">
-        <h2>Highlights</h2>
+</main>
 
-        <div class="card">
-          <b>Contact mechanics</b>
-          <div class="small">Analytical and numerical contact models, friction, wear, and damage metrics.</div>
-        </div>
-
-        <div class="card">
-          <b>Rail vehicle dynamics and wheel-rail interaction</b>
-          <div class="small">Stability, curving performance, guidance, and track-vehicle coupled behavior.</div>
-        </div>
-
-        <div class="card">
-          <b>Tribology for rail and mechanical systems</b>
-          <div class="small">Surface interactions, lubrication regimes, and material response under rolling contact.</div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      © <span id="y"></span> Nikhil Kumar
-    </footer>
+<footer class="foot">
+  <div class="shell foot__inner">
+    <nav aria-label="Footer">
+      <a href="projects.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="education.html">CV</a>
+      <a href="contact.html">Contact</a>
+      <a href="https://scholar.google.com/citations?user=mMcpcOAAAAAJ&amp;hl=en">Scholar</a>
+    </nav>
+    <p class="foot__legal">© 2026 Nikhil Kumar</p>
   </div>
+</footer>
 
-  <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
-  </script>
-  <script data-goatcounter="https://nikhilkumar.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script>
+<script src="assets/js/site.js"></script>
 </body>
 </html>

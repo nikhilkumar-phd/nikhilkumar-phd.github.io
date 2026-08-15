@@ -1,66 +1,251 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Education | Nikhil Kumar</title>
-  <link rel="stylesheet" href="assets/style.css" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CV — Nikhil Kumar</title>
+<meta name="description" content="Education, positions, and technical skills — Nikhil Kumar, Mechanical Engineering, Virginia Tech.">
+<link rel="icon" href="assets/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<meta name="theme-color" content="#13171c">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
 </head>
-
 <body>
-  <div class="page-bg"></div>
-  
-  <div class="container">
-    <header class="site-header">
-      <h1 class="site-title">Nikhil Kumar</h1>
-      <p class="site-subtitle">Contact Mechanics, Rail Vehicle Dynamics, Tribology</p>
+<a class="skip" href="#main">Skip to content</a>
 
-      <nav class="nav" aria-label="Primary">
-        <a href="index.html">Home</a>
-        <a href="projects.html">Projects</a>
-        <a href="publications.html">Publications</a>
-        <a class="active" href="education.html">Education</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </header>
-
-    <hr class="hr" />
-
-    <main>
-      <section class="section">
-        <h2>Education</h2>
-
-        <div class="card">
-          <b>PhD, Mechanical Engineering, Virginia Tech</b>
-          <div class="small">2022-2025 · Effect of Wheel and Rail Conditions on Contact Dynamics and Mechanics</div>
-        </div>
-
-        <div class="card">
-          <b>BS, Mechanical Engineering, Vellore Institute of Technology</b>
-          <div class="small">2018-2022</div>
-        </div>
-
-        <h3>Skills</h3>
-        <div class="card">
-          <ul class="list">
-            <li>Contact mechanics: Hertz, non-Hertz, rough surface contact</li>
-            <li>Rail dynamics: vehicle-track interaction, curving, stability, wear metrics</li>
-            <li>Tribology: friction models, lubrication regimes, wear modeling, material response</li>
-            <li>Software: MATLAB, Python, FEA packages, MBD tools, data acquisition</li>
-          </ul>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      © <span id="y"></span> Nikhil Kumar
-    </footer>
+<header class="masthead">
+  <div class="shell masthead__inner">
+    <a class="mark" href="index.html" aria-label="Nikhil Kumar — home">NK</a>
+    <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+    <nav class="nav" id="primary-nav" aria-label="Primary">
+      <a href="index.html">About</a>
+      <a href="projects.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="education.html" aria-current="page">CV</a>
+      <a href="contact.html">Contact</a>
+    </nav>
   </div>
+</header>
 
-  <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
-  </script>
-  <script data-goatcounter="https://nikhilkumar.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script>
+<main id="main">
+
+  <section class="section">
+    <div class="shell">
+
+      <div class="section__head">
+        <div>
+          <h2 class="section__title">Curriculum vitae</h2>
+          <p class="section__note">Education and positions</p>
+        </div>
+        <div>
+          <p class="lede">Mechanical engineering, from production tooling and undergraduate design work through a
+            doctorate in experimental contact mechanics and a postdoc building the test platforms.</p>
+          <div class="btnrow" style="margin-top:1.5rem">
+            <a class="btn btn--fill" href="assets/files/CV.pdf">Download full CV (PDF)</a>
+          </div>
+        </div>
+      </div>
+
+      <ul class="tl">
+        <li>
+          <div class="tl__when">2025 — present</div>
+          <div>
+            <h3 class="tl__what">Postdoctoral Associate · Non-Tenure Track Research Faculty</h3>
+            <p class="tl__where">Center for Vehicle Systems &amp; Safety, Virginia Tech</p>
+            <p class="tl__detail">Led the expansion of a single-wheel contact rig into a single-axle test
+              platform: servo motor and drive specification, motion axis integration into the existing control
+              architecture, safety circuit design, and custom instrumentation calibration. Running dynamic
+              conformal contact testing under mixed creepage, and non-contact wheel defect diagnostics with
+              MxV Rail.</p>
+          </div>
+        </li>
+        <li>
+          <div class="tl__when">2022 — 2025</div>
+          <div>
+            <h3 class="tl__what">PhD, Mechanical Engineering</h3>
+            <p class="tl__where">Virginia Tech · Advisor: Dr. Mehdi Ahmadian · GPA 3.91/4.0</p>
+            <p class="tl__detail">Dissertation: <em>Effect of Wheel and Rail Conditions on Contact Dynamics and
+              Mechanics</em>. Experimental characterisation of non-Hertzian conformal and two-point contact,
+              third-body layer effects on traction, and wear optimisation validated against baseline testing.
+              Delivered to the Federal Railroad Administration.</p>
+          </div>
+        </li>
+        <li>
+          <div class="tl__when">2020 — 2022</div>
+          <div>
+            <h3 class="tl__what">Undergraduate Research Assistant</h3>
+            <p class="tl__where">Vellore Institute of Technology · Advisor: Dr. K. Anandavel</p>
+            <p class="tl__detail">Finite element contact modelling of stepped and back-to-back bolted joints in
+              ANSYS APDL, with parametric evaluation of stress and strain at frictional interfaces. Best Paper
+              award at a peer-reviewed conference.</p>
+          </div>
+        </li>
+        <li>
+          <div class="tl__when">2018 — 2022</div>
+          <div>
+            <h3 class="tl__what">BTech, Mechanical Engineering</h3>
+            <p class="tl__where">Vellore Institute of Technology, India · GPA 8.56/10</p>
+            <p class="tl__detail">Senior project: systematic process improvement in tooling on the 3C machining
+              lines at Toyota Engines India, applying the Toyota Production System. Coursework and projects in
+              additive manufacturing, machining and metrology, and lean enterprise.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section section--tight">
+    <div class="shell">
+      <div class="section__head">
+        <div>
+          <h2 class="section__title">Technical skills</h2>
+          <p class="section__note">Methods and tools</p>
+        </div>
+        <p class="lede">Weighted toward experimental design and measurement, with the modelling needed to
+          interpret it.</p>
+      </div>
+
+      <div class="skillgrid">
+        <div>
+          <h3>Test systems</h3>
+          <p>Rig design and commissioning, servo motor and drive specification, multi-axis motion integration,
+            control architecture extension, machine safety protocols (STO, E-Stop, RTO), mechanical fixturing.</p>
+        </div>
+        <div>
+          <h3>Instrumentation and DAQ</h3>
+          <p>Custom PCB validation for wheel instrumentation, load cells, air-coupled ultrasonic sensors,
+            pressure-sensitive films, signal conditioning, sensor placement, and calibration for signal
+            integrity under operational loads.</p>
+        </div>
+        <div>
+          <h3>Test and measurement</h3>
+          <p>Design of experiments in JMP and Minitab across multiple degrees of freedom, test protocol
+            development, instrumented impact testing, controlled laboratory and field campaigns, statistically
+            rigorous technical reporting to federal stakeholders.</p>
+        </div>
+        <div>
+          <h3>Contact mechanics and tribology</h3>
+          <p>Hertzian and non-Hertzian contact, conformal and two-point contact, friction and adhesion,
+            third-body layers, wear modelling on modified Archard formulations, rolling contact fatigue.</p>
+        </div>
+        <div>
+          <h3>Analysis and modelling</h3>
+          <p>Finite element analysis, multibody dynamics, constrained numerical optimisation including
+            sequential quadratic programming, signal processing, model validation against experimental data.</p>
+        </div>
+        <div>
+          <h3>Software</h3>
+          <p>MATLAB, Python, JMP, Minitab, ANSYS (Mechanical and APDL), Abaqus, CONTACT, SolidWorks,
+            Fusion 360, AutoCAD.</p>
+        </div>
+        <div>
+          <h3>Programme delivery</h3>
+          <p>Federally sponsored project management, scope and milestone ownership, sponsor reporting to the
+            Federal Railroad Administration, proposal development, mentoring junior researchers.</p>
+        </div>
+      </div>
+
+      <div class="section__head" style="margin-top:clamp(2.5rem,5vw,3.5rem)">
+        <div>
+          <h2 class="section__title">Funding and delivery</h2>
+          <p class="section__note">Sponsored research</p>
+        </div>
+        <p class="lede">Roughly $500,000 in federally sponsored research delivered as primary researcher.</p>
+      </div>
+
+      <ul class="tl">
+        <li>
+          <div class="tl__when">Delivered</div>
+          <div>
+            <h3 class="tl__what">Federal Railroad Administration</h3>
+            <p class="tl__where">Primary researcher · approx. $500,000 · two-year timelines</p>
+            <p class="tl__detail">Owned scope, milestones, and sponsor deliverables, and met them on schedule.</p>
+          </div>
+        </li>
+        <li>
+          <div class="tl__when">Contributed</div>
+          <div>
+            <h3 class="tl__what">U.S. Department of Transportation, University Transportation Center</h3>
+            <p class="tl__where">Multi-institutional proposal</p>
+            <p class="tl__detail">Helped develop technical scope and proposal narrative.</p>
+          </div>
+        </li>
+      </ul>
+
+      <div class="section__head" style="margin-top:clamp(2.5rem,5vw,3.5rem)">
+        <div>
+          <h2 class="section__title">Service and leadership</h2>
+          <p class="section__note">Departmental and outreach</p>
+        </div>
+        <p class="lede">Elected roles across the graduate community, plus peer review for three venues.</p>
+      </div>
+
+      <ul class="tl">
+        <li>
+          <div class="tl__when">2025 — 2026</div>
+          <div>
+            <h3 class="tl__what">President</h3>
+            <p class="tl__where">Virginia Tech AREMA Student Chapter</p>
+          </div>
+        </li>
+        <li>
+          <div class="tl__when">2024 — 2025</div>
+          <div>
+            <h3 class="tl__what">Vice President</h3>
+            <p class="tl__where">Mechanical Engineering Graduate Student Council, Virginia Tech</p>
+          </div>
+        </li>
+        <li>
+          <div class="tl__when">2024 — 2025</div>
+          <div>
+            <h3 class="tl__what">Student Mentor</h3>
+            <p class="tl__where">Department of Mechanical Engineering, Virginia Tech</p>
+          </div>
+        </li>
+        <li>
+          <div class="tl__when">2020 — 2021</div>
+          <div>
+            <h3 class="tl__what">Finance Head</h3>
+            <p class="tl__where">Becoming I Foundation, Vellore, India</p>
+          </div>
+        </li>
+        <li>
+          <div class="tl__when">Ongoing</div>
+          <div>
+            <h3 class="tl__what">Peer reviewer</h3>
+            <p class="tl__where">SAE Technical Papers · International Journal of Rail Transportation ·
+              Railway Engineering Science</p>
+          </div>
+        </li>
+      </ul>
+
+      <div class="btnrow" style="margin-top:2.5rem">
+        <a class="btn btn--fill" href="publications.html">Publications <span class="btn__arrow" aria-hidden="true">→</span></a>
+        <a class="btn" href="contact.html">Get in touch</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="shell foot__inner">
+    <nav aria-label="Footer">
+      <a href="index.html">About</a>
+      <a href="projects.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <p class="foot__legal">© 2026 Nikhil Kumar</p>
+  </div>
+</footer>
+
+<script src="assets/js/site.js"></script>
 </body>
 </html>
